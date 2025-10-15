@@ -1,0 +1,24 @@
+<div class="app">
+    <h1>Game Acak Kata</h1>
+
+    <div class="game-container">
+        <p>Soal <span id="word-counter">1</span> dari 5</p>
+        <p id="clue-text">Petunjuk: <span></span></p>
+        <h2 id="scrambled-word"></h2>
+        
+        <p id="guesses-text">Sisa Kesalahan: <span>3</span></p>
+        
+        <p id="feedback-text"></p>
+        
+        <div class="input-area">
+            <input type="text" id="guess-input" placeholder="Ketik tebakanmu...">
+            <button id="check-btn" class="btn">Tebak</button>
+            <button id="skip-btn" class="btn">Lewati (Salah -1)</button>
+        </div>
+        
+        <div id="game-over-area" style="display: none;">
+            <p id="final-message"></p>
+            <button id="continue-btn" class="btn">Lanjut ke Tantangan Berikutnya</button>
+        </div>
+    </div>
+</div>

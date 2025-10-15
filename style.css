@@ -1,0 +1,131 @@
+/* File: style.css (TEMA BARU IMIGRASI) */
+
+/* === GAYA UTAMA & MENU === */
+* { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { 
+    background-color: #053B77; /* Warna biru tua Imigrasi */
+    /* Pola background halus */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 20px 0; 
+}
+
+.main-container { background: #fff; width: 90%; max-width: 800px; margin: 40px auto; border-radius: 10px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+h1 { color: #053B77; font-weight: 600; border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-top: 0; margin-bottom: 20px; }
+h2 { color: #053B77; }
+p { font-size: 1.1em; color: #555; line-height: 1.6; }
+#start-screen, #end-screen { padding: 20px; }
+
+#start-game-btn, #restart-all-btn { 
+    background: #2E79B9; /* Biru muda untuk tombol utama */
+    color: #fff; 
+    border: none; 
+    padding: 15px 30px; 
+    margin-top: 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+#start-game-btn:hover, #restart-all-btn:hover { background: #053B77; } /* Menjadi biru tua saat hover */
+#game-container { margin-top: 20px; }
+
+/* === GAYA UNTUK TRIVIA, BENAR/SALAH, STUDI KASUS === */
+.app { width: 100%; max-width: 600px; margin: 0 auto; padding: 15px; text-align: left; }
+.app h1 { font-size: 25px; padding-bottom: 20px; text-align: center; }
+.quiz { padding: 20px 0; }
+.quiz h2 { font-size: 18px; font-weight: 600; min-height: 120px; text-align: left; }
+
+.btn { 
+    background: #fff; 
+    color: #333; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 5px 0; 
+    text-align: left; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: all 0.3s; 
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn:hover:not([disabled]) { 
+    background: #f0f8ff; /* Latar sedikit biru saat hover */
+    border-color: #2E79B9;
+}
+.btn:disabled { cursor: no-drop; }
+.btn.correct { background: #d1e7dd; color: #0f5132; border-color: #badbcc; }
+.btn.incorrect { background: #f8d7da; color: #842029; border-color: #f5c2c7; }
+.answer-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+
+#next-btn, #check-order-btn, #next-process-btn, #check-btn, #refresh-btn, #skip-btn, #continue-btn, #back-to-menu-btn {
+    background: #053B77; /* Biru tua untuk tombol aksi */
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+#next-btn:hover, #check-order-btn:hover, #next-process-btn:hover, #check-btn:hover, #refresh-btn:hover, #skip-btn:hover, #continue-btn:hover {
+    background: #2E79B9; /* Biru muda saat hover */
+}
+
+/* === GAYA UNTUK ACAK KATA === */
+.app { text-align: center; }
+#scrambled-word { color: #053B77; font-size: 36px; letter-spacing: 5px; margin: 20px 0; padding: 10px; border: 2px dashed #ccc; min-height: 65px; }
+#guesses-text { color: #842029; margin-bottom: 10px; }
+#guesses-text span { font-weight: bold; }
+#feedback-text { min-height: 24px; font-weight: bold; font-size: 18px; }
+.feedback-correct { color: #198754; }
+.feedback-incorrect { color: #dc3545; }
+.input-area { display: flex; gap: 10px; margin: 20px 0; }
+#guess-input { flex-grow: 1; border: 1px solid #ccc; padding: 10px; font-size: 16px; border-radius: 5px; text-align: center; }
+.history-container h4 { margin-bottom: 5px; font-weight: normal; }
+#wrong-guesses-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+#wrong-guesses-list li { background-color: #f8d7da; color: #842029; padding: 2px 8px; border-radius: 4px; text-decoration: line-through; }
+
+/* === GAYA UNTUK URUTKAN PROSES === */
+.game-area { margin-top: 20px; }
+#process-title { color: #053B77; text-align: center; margin-bottom: 25px; }
+#sortable-list { list-style: none; padding: 0; }
+.sortable-item { background-color: #f8f9fa; border: 1px solid #dee2e6; cursor: grab; }
+.item-number { 
+    background-color: #E4A11B; /* Aksen emas untuk nomor */
+    color: white; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 15px; 
+    flex-shrink: 0; 
+}
+.button-container { text-align: center; margin-top: 20px; }
+.sortable-ghost { opacity: 0.4; background: #c8ebfb; }
+.sortable-item.wrong-position { background-color: #f8d7da; color: #842029; border-color: #f5c2c7; }
+
+/* SKOR AKHIR */
+#final-scores-breakdown {
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+#final-scores-breakdown p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+#total-score-display {
+    color: #053B77;
+    margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Keimigrasian</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Game Edukasi Keimigrasian</h1>
+        <div id="start-screen">
+            <p>Uji pengetahuanmu tentang keimigrasian melalui 5 tantangan acak!</p>
+            <button id="start-game-btn">Mulai Petualangan</button>
+        </div>
+        <div id="game-container"></div>
+        <div id="end-screen" style="display: none;">
+            <h2>Luar Biasa!</h2>
+            <p>Kamu telah menyelesaikan semua tantangan. Berikut hasilmu:</p>
+            
+            <div id="final-scores-breakdown">
+                </div>
+
+            <h3 id="total-score-display">Total Skor: 0 / 0</h3>
+
+            <button id="restart-all-btn">Main Lagi dari Awal</button>
+        </div>
+    </div>
+
+    <script src="bank_soal.js"></script>
+    <script src="./games/trivia_script.js"></script>
+    <script src="./games/benar_salah_script.js"></script>
+    <script src="./games/studi_kasus_script.js"></script>
+    <script src="./games/acak_kata_script.js"></script>
+    <script src="./games/urutkan_proses_script.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
