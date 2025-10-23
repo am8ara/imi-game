@@ -8,7 +8,11 @@ const allTriviaQuestions = [
   { question: "Pejabat yang menjalankan tugas Keimigrasian berdasarkan UU disebut...", answers: [{ text: "Polisi", correct: false },{ text: "Pejabat Imigrasi", correct: true },{ text: "Duta Besar", correct: false },{ text: "Hakim", correct: false }] },
   { question: "Apa yang dimaksud dengan 'Deportasi'?", answers: [{ text: "Tindakan paksa mengeluarkan Orang Asing dari Wilayah Indonesia.", correct: true },{ text: "Tindakan menolak masuknya Orang Asing di perbatasan.", correct: false },{ text: "Proses pemindahan narapidana asing ke negaranya.", correct: false },{ text: "Pencabutan paspor seorang WNI.", correct: false }] },
   { question: "Berikut ini adalah bentuk Tindakan Administratif Keimigrasian, KECUALI...", answers: [{ text: "Pidana penjara.", correct: true },{ text: "Deportasi.", correct: false },{ text: "Penangkalan.", correct: false },{ text: "Pembatalan Izin Tinggal.", correct: false }] }
-];
+  { question: "Siapakah yang dimaksud dengan 'Orang Asing' dalam UU Keimigrasian?", answers: [{ text: "Orang yang bukan Warga Negara Indonesia.", correct: true }, { text: "Orang yang lahir di luar negeri dari orang tua WNI.", correct: false }, { text: "WNI yang memiliki paspor negara lain.", correct: false }, { text: "Setiap orang yang datang sebagai turis.", correct: false }] },
+  { question: "Apa yang dimaksud dengan 'Visa Republik Indonesia'?", answers: [{ text: "Persetujuan tertulis sebagai dasar pemberian Izin Tinggal.", correct: true }, { text: "Kartu identitas bagi Orang Asing di Indonesia.", correct: false }, { text: "Surat izin untuk bekerja di Indonesia.", correct: false }, { text: "Dokumen yang menggantikan paspor.", correct: false }] },
+  { question: "Apa fungsi utama dari Izin Tinggal?", answers: [{ text: "Memberikan hak kepada Orang Asing untuk berada di Wilayah Indonesia.", correct: true }, { text: "Memberikan hak suara dalam pemilihan umum.", correct: false }, { text: "Memberikan status kewarganegaraan sementara.", correct: false }, { text: "Memberikan izin untuk membawa barang tanpa bea cukai.", correct: false }] },
+    
+    ];
 
 // 2. Data untuk Game Benar atau Salah
 const allStatements = [
@@ -38,4 +42,5 @@ const wordScrambleData = {
 const allProcesses = [
     { title: "Urutkan Alur Permohonan Paspor Biasa secara Online", steps: [ "Unduh aplikasi M-Paspor dan buat akun.", "Pilih kantor imigrasi dan jadwal kedatangan.", "Lakukan pembayaran biaya permohonan.", "Datang ke kantor imigrasi sesuai jadwal untuk foto & wawancara.", "Tunggu proses selesai dan ambil paspor yang sudah jadi." ] },
     { title: "Urutkan Tahapan Pemeriksaan Imigrasi di Pintu Keberangkatan Internasional", steps: [ "Check-in di konter maskapai dan dapatkan boarding pass.", "Menuju konter pemeriksaan Imigrasi.", "Serahkan Paspor dan boarding pass kepada Petugas Imigrasi.", "Dapatkan Tanda Keluar (stempel) pada Paspor.", "Lanjutkan ke ruang tunggu keberangkatan (boarding lounge)." ] }
+
 ];
